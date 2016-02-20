@@ -1,0 +1,271 @@
+#Fichier de configuration
+
+
+#Definit l'emplacement de l'installation de Windows
+$set=\Device\HarddiskVolume2
+
+subject \Windows\explorer.exe {
+	\Device\HarddiskVolume2\Windows\System32\cmd.exe  rx
+	\Device\HarddiskVolume2\Windows\System32\calc.exe  rx
+	\??\C:\Windows\system32\acppage.dll  rx
+	\??\C:\Windows\system32\sfc.dll  rx
+	\??\C:\Windows\system32\sfc_os.DLL  rx
+	\??\C:\Windows\system32\msi.dll  rx
+	\??\C:\Windows\system32\acppage.dll  xwcg
+	\??\C:\Windows\System32\ieframe.dll  xg
+	\??\C:\Windows\system32\dsrole.dll  rx
+	\??\C:\Windows\System32\StructuredQuery.dll  rx
+	\??\C:\Windows\System32\SearchFolder.dll  rxwcg
+	\??\C:\Windows\System32\NaturalLanguage6.dll  rx
+	\??\C:\Windows\resources\themes\Aero\Shell\NormalColor\ShellStyle.dll  xg
+	\??\C:\Windows\System32\NLSData000c.dll  rx
+	\??\C:\Windows\System32\NLSLexicons000c.dll  rx
+	\??\C:\Windows\win.ini  x
+	\??\C:\Windows\assembly\desktop.ini  xg
+	\??\C:\Windows\BitLockerDiscoveryVolumeContents\desktop.ini  xg
+	\??\C:\Windows\Media\desktop.ini  xg
+	\??\C:\Windows\Installer\desktop.ini  xg
+	\??\C:\Windows\Fonts\desktop.ini  xg
+	\??\C:\  rxg
+	\??\C:  rgx
+	\??\C:\Users\  rxwcg
+	\??\C:\Users  rxwcg
+	\??\C:\System Volume Information\  rxwcg
+	\??\C:\System Volume Information  rxwcg
+	\??\C:\Windows\  rxwcg
+	\??\C:\Windows  rxwcg
+	\??\C:\Recovery\  rxwcg
+	\??\C:\Recovery  rxwcg
+	\??\C:\Program Files\  rxwcg
+	\??\C:\Program Files  rxwcg
+	\??\C:\PerfLogs\  rxwcg
+	\??\C:\PerfLogs  rxwcg
+	\??\C:\Documents and Settings\  rxwcg
+	\??\C:\Documents and Settings  rxwcg
+	\??\C:\ProgramData\  rxwcg
+	\??\C:\ProgramData  rxwcg
+	\??\C:\pagefile.sys  rxwcg
+	\??\C:\config.sys  rxwcg
+	\??\C:\autoexec.bat  rxwcg
+	\??\C:\politique.txt  rxwcg
+	\??\C:\logips.txt  rxwcg
+	\??\MountPointManager  xg
+	\Device\MountPointManager  xg
+	\Device\HarddiskVolume2  xg
+	\??\C:\Users\Public\Desktop  rxg
+	\??\PIPE\srvsvc  xg
+	\??\PIPE\lsarpc  xg
+	\??\C:\Users\win7\Link  rxg
+	\??\C:\Users\win7\  rgx
+	\??\C:\Users\win7  rgx
+	\??\C:\Users\win7\Favorites\Links  rxg
+	\??\C:\Users\win7\Desktop  rgx
+	\??\C:\Users\win7\Desktop\  rgx
+	\??\C:\Users\win7\Desktop\desktop.ini  x
+	\??\C:\Users\win7\Links\desktop.ini  xg
+	\??\C:\Users\win7\AppData\Roaming  rxg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft  rxg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows  rxg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows\Libraries  rxg
+	\??\C:\Users\win7\AppData  rxg
+	\??\C:\Users\win7\AppData\  rxg
+	\??\C:\Users\win7\Links\desktop.ini  xg
+	\??\C:\Users\win7\AppData\Local\VirtualStore\  rx
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows\Libraries  rxwcg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows\Libraries\Documents.library-ms  rxwcg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows\Libraries\Pictures.library-ms  rxwcg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows\Libraries\Music.library-ms  rxwcg
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Windows\Libraries\Videos.library-ms  rxwcg
+	\??\C:\Users\win7\AppData\Local\Microsoft\Windows\Explorer  x
+	\REGISTRY\USER\S-1-5-21-554703637-1447812215-3220199465-1002 m
+	\Registry\Machine\SYSTEM\CurrentControlSet\Control\MUI\StringCacheSettings  r
+	\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\Time Zones\Romance Standard Time\Dynamic DST  m
+}
+
+subject \Windows\System32\csrss.exe {
+	\Device\HarddiskVolume2\Windows\System32\conhost.exe  rx
+	\??\C:\Windows\system32\cmd.exe.Config  rxwcg
+	S-1-5-21-554703637-1447812215-3220199465-1002  r
+}
+
+
+subject \Windows\System32\svchost.exe {
+	\Device\HarddiskVolume2\Windows\System32\slui.exe  rx
+	\Device\HarddiskVolume2\Windows\System32\dllhost.exe  rx
+	\??\C:\Windows\system32\ci.dll  xg
+	\??\C:\Windows\System32\Winevt\Logs\Microsoft-Windows-CodeIntegrity%4Operational.evtx  xg
+	\??\c:\windows\system32\aelupsvc.dll  rx
+	\??\C:\  rx
+	\??\C:\Users\  rx
+	\??\C:\Users\win7\  rx
+	\??\C:\Users\win7\Desktop\  rx
+	\??\C:\Windows\Prefetch\  rx
+	\??\C:\Windows\system32\DllHost.exe  xg
+	\??\C:\Windows\system32\drivers\  rx
+	\Device\FileInfo  rxwcg
+	\DEVICE\NETBT_TCPIP_{AB76F221-8137-4549-B79A-31500C1708CC}  rx
+	\DEVICE\NETBT_TCPIP_{2427CEAD-EFB1-4E7B-84CC-AF50769AC641}  rx
+	\DEVICE\NETBT_TCPIP_{E29AC6C2-7037-11DE-816D-806E6F6E6963}  rx
+	\??\C:\Windows\ServiceProfiles\LocalService  rx
+	\??\C:\Windows\ServiceProfiles\LocalService\AppData\Local  rx
+	\??\C:\Windows\ServiceProfiles\LocalService\AppData\Local\PnrpSqm  rx
+	\??\C:\ProgramData\Microsoft\Windows\Sqm\Upload  rx
+	\Device\KsecDD  rx
+	\Device\Afd\Endpoint  xs
+	\Device\RasAcd  rwc
+	\??\MountPointManager xg
+	\MountPointManager xg
+	\Device\HarddiskVolume2  xg
+	\Device\Csc\.\.  rxwcg
+	\REGISTRY\MACHINE  m
+	\REGISTRY\USER\S-1-5-19  m
+	\Registry\User\S-1-5-19_Classes  m
+	\REGISTRY\USER  m
+	AppCompatFlags\Layers  rcs
+	Custom\slui.exe  rcs
+	slui.exe  r
+	\Registry\MACHINE\Software\Microsoft\Windows\CurrentVersion\SideBySide  rxwcgs
+	\REGISTRY\USER\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders  r
+}
+
+
+subject \Windows\System32\csrss.exe {
+	\Device\HarddiskVolume2\Windows\System32\conhost.exe  rx
+	\??\C:\Windows\system32\cmd.exe.Config  rxwcg
+	S-1-5-21-554703637-1447812215-3220199465-1002  r
+}
+
+subject \Windows\System32\svchost.exe {
+	\Device\HarddiskVolume2\Windows\System32\slui.exe  rx
+	\Device\HarddiskVolume2\Windows\System32\dllhost.exe  rx
+	\??\C:\Windows\system32\ci.dll  xg
+	\??\C:\Windows\System32\Winevt\Logs\Microsoft-Windows-CodeIntegrity%4Operational.evtx  xg
+	\??\c:\windows\system32\aelupsvc.dll  rx
+	\??\C:\  rx
+	\??\C:\Users\  rx
+	\??\C:\Users\win7\  rx
+	\??\C:\Users\win7\Desktop\  rx
+	\??\C:\Windows\Prefetch\  rx
+	\??\C:\Windows\system32\DllHost.exe  xg
+	\??\C:\Windows\system32\drivers\  rx
+	\Device\FileInfo  rxwcg
+	\DEVICE\NETBT_TCPIP_{AB76F221-8137-4549-B79A-31500C1708CC}  rx
+	\DEVICE\NETBT_TCPIP_{2427CEAD-EFB1-4E7B-84CC-AF50769AC641}  rx
+	\DEVICE\NETBT_TCPIP_{E29AC6C2-7037-11DE-816D-806E6F6E6963}  rx
+	\??\C:\Windows\ServiceProfiles\LocalService  rx
+	\??\C:\Windows\ServiceProfiles\LocalService\AppData\Local  rx
+	\??\C:\Windows\ServiceProfiles\LocalService\AppData\Local\PnrpSqm  rx
+	\??\C:\ProgramData\Microsoft\Windows\Sqm\Upload  rx
+	\Device\KsecDD  rx
+	\Device\Afd\Endpoint  xs
+	\Device\RasAcd  rwc
+	\??\MountPointManager xg
+	\MountPointManager xg
+	\Device\HarddiskVolume2  xg
+	\Device\Csc\.\.  rxwcg
+	\REGISTRY\MACHINE  m
+	\REGISTRY\USER\S-1-5-19  m
+	\Registry\User\S-1-5-19_Classes  m
+	\REGISTRY\USER  m
+	AppCompatFlags\Layers  rcs
+	Custom\slui.exe  rcs
+	slui.exe  r
+	\Registry\MACHINE\Software\Microsoft\Windows\CurrentVersion\SideBySide  rxwcgs
+	\REGISTRY\USER\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders  r
+}
+
+subject \Windows\System32\services.exe {
+	\Device\HarddiskVolume2\Windows\System32\taskhost.exe  rx
+	\Device\HarddiskVolume2\Program Files\Windows Defender\MpCmdRun.exe  rx
+	\Device\HarddiskVolume2\Windows\System32\rundll32.exe  rx
+	\Device\HarddiskVolume2\Windows\System32\VSSVC.exe  rx
+	\Device\HarddiskVolume2\Windows\System32\svchost.exe  rx
+	AeLookupSvc rxwcgs
+}
+
+
+subject \Windows\System32\dllhost.exe {
+	\??\C:\Windows\system32\USERENV.dll  rx
+	\??\C:\Windows\system32\profapi.dll  rx
+	\??\C:\Windows\System32\IDStore.dll  rx
+	\??\C:\Windows\system32\IMM32.DLL  rx
+	\??\C:\Windows\system32\rpcss.dll  rx
+	\??\C:\Windows\system32\CRYPTBASE.dll  rx
+	\??\C:\Windows\SYSTEM32\sechost.dll  rx
+	\??\C:\Windows\system32\CRYPTSP.dll  rx
+	\??\C:\Windows\system32\rsaenh.dll  rxg
+	\??\C:\Windows\System32\shacct.dll  rx
+	\??\C:\Windows\system32\RpcRtRemote.dll  rx
+	\Device\KsecDD  rx
+}
+
+subject \Windows\System32\cmd.exe {
+	\??\C:\CEA\Programmation\Driver\exe\objfre_win7_x86\i386\  rx
+	\??\C:\Windows\system32\WINBRAND.dll  rx
+	\??\C:\Windows\system32\IMM32.DLL  rx
+	\??\C:\  rx
+	\Registry\MACHINE\System\CurrentControlSet\Control\SafeBoot\Option  rwc
+	\Registry\Machine\System\CurrentControlSet\Control\Srp\GP\DLL  rxwcgs
+	\Registry\Machine\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers  r
+	\Registry\Machine\System\CurrentControlSet\Control\Nls\Sorting\Versions  rxwcgs
+	\Registry\Machine\System\CurrentControlSet\Control\Nls\CustomLocale rxwcgs
+	\Registry\Machine\System\CurrentControlSet\Control\Nls\ExtendedLocale rxwcgs
+	\Registry\Machine\System\CurrentControlSet\Control\Nls\Locale  rxwcgs
+	\Registry\Machine\System\CurrentControlSet\Control\Nls\Locale\Alternate Sorts rxwcgs
+	\Registry\Machine\System\CurrentControlSet\Control\Nls\Language Groups rxwcgs
+	\Registry\MACHINE\System\CurrentControlSet\Control\Session Manager  r
+	\Registry\Machine\System\CurrentControlSet\Control\Error Message Instrument\  rxwcgs
+	\Registry\Machine\Software\Microsoft\Windows\Windows Error Reporting\WMR r
+	\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\GRE_Initialize  rxwcgs
+	\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\Compatibility32  rxwcgs
+	\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\IME Compatibility  rxwcgs
+	\REGISTRY\MACHINE  m
+	\REGISTRY\USER\S-1-5-21-554703637-1447812215-3220199465-1002  m
+}
+
+subject \Windows\System32\slui.exe {
+	\??\C:\Windows\System32\slui.exe  xg
+	\??\C:\Windows\system32\services.exe  xg
+	\??\C:\Windows\System32\CRYPTSP.dll  rx
+	\??\C:\Windows\system32\rsaenh.dll  rx
+	\??\C:\Windows\System32\RpcRtRemote.dll  rxwcg
+	\??\C:\Windows\system32\sppcomapi.dll  rx
+	\??\C:\Windows\System32\CRYPTBASE.dll  rx
+	\??\C:\Windows\system32\rpcss.dll  rx
+	\??\C:\Windows\WindowsShell.Manifest  rxwcg
+	\??\C:\Windows\system32\CRYPTUI.dl  rxwcg
+	\??\C:\Windows\system32\WTSAPI32.dll  rxwcg
+	\??\C:\Windows\system32\slwga.dll  rx
+	\??\C:\Windows\system32\msi.dll  rx
+	\??\C:\Windows\system32\TAPI32.dll  rx
+	\??\C:\Windows\system32\rasman.dll  rx
+	\??\C:\Windows\system32\RASAPI32.dll  rx
+	\??\C:\Windows\system32\webio.dll  rx
+	\??\C:\Windows\system32\WINHTTP.dll  rx
+	\??\C:\Windows\system32\rsaenh.dll  xg
+	\??\C:\Windows\System32\SPPC.DLL  rx
+	\??\C:\Windows\system32\WinSCard.dll  rx
+	\SystemRoot\AppPatch\sysmain.sdb  xg
+	\Registry\MACHINE\System\CurrentControlSet\Control\SafeBoot\Option  rwc
+}
+
+subject \Windows\System32\sppsvc.exe {
+	\??\SPDevice  xg
+}
+
+subject \Windows\System32\lsass.exe {
+	\??\PIPE\samr  xg
+	\Registry\Machine\System\CurrentControlSet\Control\Cryptography\Providers  rxwcgs
+	\Registry\Machine\System\CurrentControlSet\Control\Cryptography\Configuration  rxwcgs
+	DOMAINS\Account\Users\000003EA  rxwcgsa
+	DOMAINS\Account\Aliases\000003EA  rxwcgsa
+	DOMAINS\Account\Groups\000003EA  rxwcgsa
+	DOMAINS\Account\Groups\Names\win7  rxwcgs
+	DOMAINS\Account\Aliases\Names\win7  rxwcgs
+	DOMAINS\Account\Users\Names\win7  rxwcgs
+	\??\C:\Users\win7\AppData\Roaming\Microsoft\Protect\CREDHIST  xg
+}
+
+subject \Windows\System32\taskhost.exe {
+	\REGISTRY\USER\S-1-5-21-554703637-1447812215-3220199465-1002  r
+}
